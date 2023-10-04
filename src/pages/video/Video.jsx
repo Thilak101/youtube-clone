@@ -80,7 +80,7 @@ const Video = () => {
 
   return (
     <div className="py-20 px-9 bg-yt-black flex flex-row w-full justify-between">
-      <div>
+      <div className="flex flex-col">
         <div className="left">
           <iframe
             src={`https://www.youtube.com/embed/${data?.link}`}
@@ -214,9 +214,9 @@ const Video = () => {
         </div>
       </div>
 
-      <div className="right px-3 scrollbar-hide overflow-y-hidden">
+      <div className="right px-3 w-[600px] scrollbar-hide overflow-y-hidden">
         <div>
-          <div className="flex  flex-row scrollbar-hide flex-0.5 px-3 overflow-x-scroll relative scrollbar-hide">
+          <div className="flex  flex-row scrollbar-hide  px-3 overflow-x-scroll relative scrollbar-hide">
             {CategoryItems.map((item, index) => {
               return (
                 <div
